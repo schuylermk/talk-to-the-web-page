@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Talk to the web page</title>
   </head>
   <body>
+    <h1>Talk to the web page</h1>
     <div class="container">
-      <h1>Talk to the web page</h1>
-      <p>Click the button to say something to the web page. Seee what it says back!</p>
-
-      <button class="btn btn-primary" id="hello">Say "hello"</button>
-      <button class="btn btn-inverse" id="goodbye">Say "goodbye"</button>
-      <button class="btn btn-danger" id="stop">Say "stop copying me!"</button>
-
       <div class="row">
-        <div class="col-md-6">
-          <h2>You said:</h2>
-          <ul class="unstyled" id="user">
-
-          </ul>
-
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">Click the button below for the page to say Hello</div>
+              <div class="panel-body">
+                <span class="hello-hidden"></span><span class="hello-shown">Hello!</span>
+              </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <h2>The web page said back:</h2>
-          <ul class="unstyled" id="webpage">
-          </ul>
+
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">And, click below here to say Goodbye</div>
+              <div class="panel-body">
+                <span class="goodbye-hidden"></span><span class="goodbye-shown">Goodbye!</span>
+              </div>
+          </div>
         </div>
       </div>
     </div>
+
+
   </body>
 </html>
